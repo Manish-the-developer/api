@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li>
+                <a href="readapi.html">View</a>
+            </li>
+            <li>
+                <a href="index.html">Create</a>
+            </li>
+            <li>
+                <a href="index.html">Delete</a>
+            </li>
+            <li>
+                <a href="index.html">Update</a>
+            </li>
+        </ul>
+    </header>
+    <div id="form-container">
+        <div id="form-container-top">            
+            <h1>Form to create dynamic json file</h1>
+        </div>
+        <div id="form-container-bottom">            
+            <form action="" id="add-form">
+                <table>
+                    <tr>
+                        <td><input type="hidden" name="data_id" value="" id="api_data_id"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="name" placeholder="Enter Your Name" id="name" required/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="age" placeholder="Enter Your Age" id="age" required/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="phone" placeholder="Enter Your Phone No." id="phone" required/></td>
+                    </tr>
+                    <tr>
+                        <td><textarea name="address" placeholder="Enter Your Address " id="address" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" name="submit-btn" value="Send" id="submit-btn"/></td>
+                    </tr>
+                    <tr>
+                        <td id="message-box"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div id="api-data-table">
+        <table id="api-result">
+            <tr>
+                <td>DATA ID</td>
+                <td>NAME</td>
+                <td>AGE</td>
+                <td>PHONE</td>
+                <td>ADDRESS</td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
