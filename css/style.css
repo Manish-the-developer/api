@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    font-size:15px;
+    background-color: #eee;
+}
+header{
+    width:100%;
+    background-color: #000;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    margin: 0 20px;
+    padding:20px 10px;
+}
+header ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size:1.1rem;
+}
+#form-container{
+    width:50%;
+    margin:50px auto 40px auto;
+    background-color: #fff;
+}
+#form-container-top{
+    width:100%;
+    padding-top:30px;
+}
+#form-container-top >h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom:20px;
+    font-weight: 400;
+}
+#form-container-bottom{
+    width:100%;
+    padding: 10px;
+}
+#form-container-bottom form{
+    width:100%;
+    padding-right:20px;
+    padding-left:20px;
+}
+#form-container-bottom form table{
+    width:100%;
+}
+#form-container-bottom form table td{
+    width:100%;
+}
+#form-container-bottom form table td input{
+    width:100%;
+    margin:5px auto;
+    padding:10px 15px;
+    outline: none;
+    border:1px solid #d9d9d9;
+    font-size:1.2rem;
+}
+#form-container-bottom form table td textarea{
+    width:100%;
+    resize: none;
+    margin:5px auto;
+    padding:10px 15px;
+    outline: none;
+    border:1px solid #d9d9d9;   
+    font-size:1.2rem;
+}
+#submit-btn, #update-btn{
+    width:150px !important;
+    padding:10px 20px;
+    background-color: orangered;
+    color:#fff;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+#submit-btn:hover{
+    background-color:#fff;
+    color:orangered;
+    border: 1px solid orangered;
+}
+#message-box{
+    color:red;
+    padding:10px;
+}
+#api-data-table{
+    width:100%;
+    height:auto;
+    padding:10px 50px;
+}
+#api-result{
+    width:100%;
+    height: auto;
+    padding-bottom:50px;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+#api-result tr:first-child{
+    background-color: #000;
+}
+#api-result tr:first-child td{
+    color:#fff;
+}
+#api-result td{
+    border:1px solid #646161;
+    padding:10px;
+    text-align: center;
+}
